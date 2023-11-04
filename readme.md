@@ -1,3 +1,5 @@
+A copied repo of instantviewbot
+
 This bot makes instant view from channel post that have not IV
 
 You can find this bot by keywords such as “InstantViewBot”
