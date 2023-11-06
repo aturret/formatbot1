@@ -31,6 +31,16 @@ const getLinkFromEntity = (entities, txt) => {
   return links;
 };
 
+const getDomain = (hostname) => {
+    const parts = hostname.split('.').reverse();
+    if (parts.length >= 2) {
+      // Join the TLD and the domain name
+      return parts[1] + '.' + parts[0];
+    }
+    return hostname;
+  };
+
 module.exports.getAllLinks = getAllLinks;
 module.exports.getLink = getLink;
 module.exports.getLinkFromEntity = getLinkFromEntity;
+module.exports.getDomain = getDomain;
