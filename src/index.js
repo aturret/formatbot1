@@ -25,3 +25,4 @@ if (botInstance) {
     botInstance.stop('SIGTERM');
   });
 }
+
